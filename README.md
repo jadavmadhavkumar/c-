@@ -1,0 +1,5 @@
+<b>fork() function</b>  is a system call in Unix-like operating systems (including Linux and macOS) that is used to create a new process. The new process created by fork() is called the child process, and the process that calls fork() is called the parent process.
+
+When fork() is called, a copy of the parent process is created, including all of its memory, open file descriptors, and other resources. The child process is a duplicate of the parent process, but has its own memory space and process ID (PID). After fork() returns, both the parent and child processes continue executing from the point where fork() was called, but each has a different return value from fork(): the parent process receives the PID of the child process, while the child process receives 0.
+
+fork() is often used in conjunction with the exec() family of functions to create new processes that execute different programs. The fork() function is used to create a new process, and the exec() function is used to replace the current process image with a new one. This allows a program to create a new process that runs a different program, while still retaining control over the original process.
